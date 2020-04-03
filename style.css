@@ -122,6 +122,7 @@ h2 span {
 .cardcontainer {
   margin-top: 10px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
 }
 
@@ -130,7 +131,7 @@ h2 span {
   height: 400px;
   border-radius: 15px;
   background-color: #FFF;
-  margin-right: 20px;
+  margin: 0 20px 20px 0;
 
   -moz-box-shadow:    0px 2px 5px 0px #bbb;
   -webkit-box-shadow: 0px 2px 5px 0px #bbb;
@@ -146,12 +147,13 @@ h2 span {
 }
 
 .card-image img {
-  height: 100%;
   margin: 0 auto;
+  height: 100%
 }
 
 .card-text {
   margin: 0 15px;
+  color: #000;
 }
 
 .card i {
