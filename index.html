@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/4cf7a24729.js" crossorigin="anonymous"></script>
-  <title>Home - Roemer Peters</title>
+  <title>Portfolio Roemer Peters</title>
 </head>
 <body>
   <div id="home"></div>
@@ -19,15 +19,15 @@
     <div id="navbar">
       <nav class="vertical-center">
         <ul class="align-left">
-          <li><a href="index.html#home" class="active">Home</a></li>
-          <li><a href="index.html#projecten">Projecten</a></li>
+          <li><a onclick="document.getElementById('home').scrollIntoView();" class="active">Home</a></li>
+          <li><a onclick="document.getElementById('projecten').scrollIntoView();">Projecten</a></li>
         </ul>
 
         <h1><span>Portfolio</span> Roemer Peters</h1>
 
         <ul class="align-right">
-          <li><a href="badges.html">Badges</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a onclick="document.getElementById('mijnbadges').scrollIntoView();">Badges</a></li>
+          <li><a onclick="document.getElementById('contact').scrollIntoView();">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -45,7 +45,7 @@
           </div>
           <div class="card-text">
             <h3>RoosterApp</h3>
-            <p>Een (soort van) app voor het Metis Rooster! <i class="fas fa-external-link-alt"></i></p>
+            <p id="roosterappdes">Een (soort van) app voor het Metis Rooster! <i class="fas fa-external-link-alt"></i></p>
           </div>
         </a>
       </div>
@@ -76,9 +76,37 @@
 
     </div>
   </section>
+  
+  <div id="mijnbadges"></div>
+  <section id="badges">
+    <h2><span>Mijn</span> behaalde badges</h2>
+
+    <script data-type="user" data-id="2768581" async="" defer="" src="https://beta.credly.noahloomans.com/credly-widget.js"></script>
+    <p>De Credly widget doet het niet, of ik gebruik hem verkeerd...</p>
+  </section>
+
+  <section id="contact">
+    <h2><span>Neem</span> contact op</h2>
+    <p>Vraag? Feedback? Nog een vraag? Neem contact op met mij!</p>
+    <div id="mailform">
+      <form method="GET" action="mailto:roemerantoniepeters@gmail.com" enctype="text/plain">
+        <p>Onderwerp</p>
+        <input type="text" name="subject" />
+    
+        <p>Bericht</p>
+        <textarea name="body"></textarea>
+    
+        <br/>
+        <input type="submit" value="Verzenden" />
+      </form>
+    </div>
+  </section>
 
   <footer>
-    <h3>Gemaakt door Roemer Peters.</h3>
+    <h4>Gemaakt door Roemer Peters.</h4>
+    <div id="icons">
+      <a href="https://github.com/roembol2000" target="_blank"><i class="fab fa-github-square"></i></a>
+    </div>
   </footer>
 
   
