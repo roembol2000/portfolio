@@ -142,6 +142,7 @@ h2 span {
 .card-image img {
   margin: 0 auto;
   height: 100%;
+  border-radius: 7px;
 }
 
 .card-text {
