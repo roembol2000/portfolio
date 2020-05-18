@@ -7,6 +7,7 @@
   <!-- Command to build CSS from SCSS: -->
   <!-- sass scss/style.scss css/style.css -->
   <script src="https://kit.fontawesome.com/4cf7a24729.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <title>Portfolio Roemer Peters</title>
 </head>
 <body>
@@ -21,15 +22,15 @@
     <div id="navbar">
       <nav class="vertical-center">
         <ul class="align-left">
-          <li><a onclick="document.getElementById('home').scrollIntoView();" class="active">Home</a></li>
-          <li><a onclick="document.getElementById('projecten').scrollIntoView();">Projecten</a></li>
+          <li><a id="homeButton" class="active">Home</a></li>
+          <li><a id="projectsButton">Projecten</a></li>
         </ul>
 
         <h1><span>Portfolio</span> Roemer Peters</h1>
 
         <ul class="align-right">
-          <li><a onclick="document.getElementById('mijnbadges').scrollIntoView();">Badges</a></li>
-          <li><a onclick="document.getElementById('contact').scrollIntoView();">Contact</a></li>
+          <li><a id="badgeButton">Badges</a></li>
+          <li><a id="contactButton">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -135,6 +136,6 @@
     </div>
   </footer>
 
-  
+  <script src="js/index.js"></script>
 </body>
 </html>
